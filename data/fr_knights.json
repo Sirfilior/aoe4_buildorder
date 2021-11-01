@@ -1,0 +1,38 @@
+{
+  "name": "Knight Rush",
+  "type": "Rush | Aggressive",
+  "timeline": [
+    {
+      "type": "move",
+      "selction": "6 starting villagers",
+      "target": "sheep"
+    },
+    {
+      "type": "build",
+      "selction": "new villager",
+      "target": "mine",
+      "chain": [
+        {
+          "type": "build",
+          "selction": "self",
+          "target": "house"
+        },
+        {
+          "type": "move",
+          "selction": "self",
+          "target": "gold"
+        }
+      ]
+    },
+    {
+      "type": "move",
+      "selction": "new villager",
+      "target": "gold"
+    },
+    {
+      "type": "move",
+      "selction": "new villager",
+      "target": "gold"
+    }
+  ]
+}

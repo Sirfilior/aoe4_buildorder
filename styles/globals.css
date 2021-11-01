@@ -6,8 +6,53 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 20em) {
+  html {
+    font-size: calc(11.64706px + 0.73529vw);
+  }
+}
+@media (min-width: 54em) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 68em) {
+  html {
+    font-size: calc(-4.66667px + 2.08333vw);
+  }
+}
+@media (min-width: 80em) {
+  html {
+    font-size: 22px;
+  }
+}
+
+body {
+  background-color: #181c29;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #ffdf91;
+  margin: 0;
+  line-height: 1.5;
+}
+
+
 a {
-  color: inherit;
+  color: #ffdf91;
   text-decoration: none;
 }
 

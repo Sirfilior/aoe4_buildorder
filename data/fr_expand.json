@@ -1,0 +1,201 @@
+{
+  "name": "Fast Expand",
+  "type": "Expand",
+  "timeline": [
+    {
+      "type": "move",
+      "selection": "6 starting villagers",
+      "target": "sheep",
+      "setup": {
+        "food": 6,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
+      "type": "build",
+      "selection": "new to mine",
+      "target": "mine",
+      "chain": [
+        {
+          "type": "build",
+          "selection": "shift house",
+          "target": "house"
+        },
+        {
+          "type": "move",
+          "selection": "shift gold",
+          "target": "gold"
+        }
+      ],
+      "setup": {
+        "food": 6,
+        "wood": 0,
+        "gold": 1,
+        "stone": 0
+      }
+    },
+    {
+      "type": "move",
+      "selection": "new gold",
+      "target": "gold",
+      "setup": {
+        "food": 6,
+        "wood": 0,
+        "gold": 2,
+        "stone": 0
+      }
+    },
+    {
+      "type": "move",
+      "selection": "new gold",
+      "target": "gold",
+      "setup": {
+        "food": 6,
+        "wood": 0,
+        "gold": 3,
+        "stone": 0
+      }
+    },
+    {
+      "type": "move",
+      "selection": "new shepp",
+      "target": "sheep",
+      "setup": {
+        "food": 7,
+        "wood": 0,
+        "gold": 3,
+        "stone": 0
+      }
+    },
+    {
+      "type": "move",
+      "selection": "new shepp",
+      "target": "sheep",
+      "setup": {
+        "food": 8,
+        "wood": 0,
+        "gold": 3,
+        "stone": 0
+      }
+    },
+    {
+      "type": "move",
+      "selection": "new food (TODO: Add goal (200g)",
+      "target": "sheep",
+      "setup": {
+        "food": 9,
+        "wood": 0,
+        "gold": 3,
+        "stone": 0
+      }
+    },
+    {
+      "type": "move",
+      "selection": "3 gold villager",
+      "target": "stone",
+      "setup": {
+        "food": 9,
+        "wood": 0,
+        "gold": 0,
+        "stone": 3
+      }
+    },
+    {
+      "type": "build",
+      "selection": "new build landmark",
+      "target": "landmark",
+      "setup": {
+        "food": 9,
+        "wood": 0,
+        "gold": 0,
+        "stone": 3
+      }
+    },
+    {
+      "type": "move",
+      "selection": "2 food villager",
+      "target": "landmark",
+      "setup": {
+        "food": 7,
+        "wood": 0,
+        "gold": 0,
+        "stone": 3
+      }
+    },
+    {
+      "type": "move",
+      "selection": "6 food villager, build with 1",
+      "target": "lumber",
+      "chain": [
+        {
+          "type": "move",
+          "selection": "all to wood",
+          "target": "wood"
+        }
+      ],
+      "setup": {
+        "food": 1,
+        "wood": 6,
+        "gold": 0,
+        "stone": 3
+      }
+    },
+    {
+      "type": "move",
+      "selection": "new wood",
+      "target": "wood",
+      "setup": {
+        "food": 1,
+        "wood": 7,
+        "gold": 0,
+        "stone": 3
+      }
+    },
+    {
+      "type": "move",
+      "selection": "new wood",
+      "target": "wood",
+      "setup": {
+        "food": 1,
+        "wood": 8,
+        "gold": 0,
+        "stone": 3
+      }
+    },
+    {
+      "type": "move",
+      "selection": "new wood",
+      "target": "wood",
+      "setup": {
+        "food": 1,
+        "wood": 9,
+        "gold": 0,
+        "stone": 3
+      }
+    },
+    {
+      "type": "move",
+      "selection": "new stone",
+      "target": "stone",
+      "setup": {
+        "food": 1,
+        "wood": 9,
+        "gold": 0,
+        "stone": 4
+      }
+    },
+    {
+      "type": "move",
+      "selection": "new sheep (after all stone to TC, and all from landmark",
+      "target": "sheep",
+      "setup": {
+        "food": 2,
+        "wood": 9,
+        "gold": 0,
+        "stone": 4
+      }
+    }
+  ]
+}
