@@ -1,6 +1,6 @@
 {
-  "name": "Fast Expand",
-  "type": "Expand",
+  "name": "Knights into Springald",
+  "type": "Aggressive",
   "timeline": [
     {
       "type": "move",
@@ -14,14 +14,36 @@
       }
     },
     {
+      "type": "move",
+      "selection": "new sheep",
+      "target": "sheep",
+      "setup": {
+        "food": 7,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
+      "type": "move",
+      "selection": "new sheep",
+      "target": "sheep",
+      "setup": {
+        "food": 8,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0
+      }
+    },
+    {
       "type": "build",
-      "selection": "new to mine",
-      "target": "mine",
+      "selection": "new to house (close to spawn)",
+      "target": "house",
       "chain": [
         {
           "type": "build",
-          "selection": "shift house",
-          "target": "house"
+          "selection": "shift mine",
+          "target": "mine"
         },
         {
           "type": "move",
@@ -30,7 +52,7 @@
         }
       ],
       "setup": {
-        "food": 6,
+        "food": 8,
         "wood": 0,
         "gold": 1,
         "stone": 0
@@ -38,108 +60,36 @@
     },
     {
       "type": "move",
-      "selection": "new gold",
+      "selection": "until 5 next to gold",
       "target": "gold",
-      "setup": {
-        "food": 6,
-        "wood": 0,
-        "gold": 2,
-        "stone": 0
-      }
-    },
-    {
-      "type": "move",
-      "selection": "new gold",
-      "target": "gold",
-      "setup": {
-        "food": 6,
-        "wood": 0,
-        "gold": 3,
-        "stone": 0
-      }
-    },
-    {
-      "type": "move",
-      "selection": "new shepp",
-      "target": "sheep",
-      "setup": {
-        "food": 7,
-        "wood": 0,
-        "gold": 3,
-        "stone": 0
-      }
-    },
-    {
-      "type": "move",
-      "selection": "new shepp",
-      "target": "sheep",
       "setup": {
         "food": 8,
         "wood": 0,
-        "gold": 3,
+        "gold": 5,
         "stone": 0
-      }
-    },
-    {
-      "type": "move",
-      "selection": "new food (TODO: Add goal (200g)",
-      "target": "sheep",
-      "setup": {
-        "food": 9,
-        "wood": 0,
-        "gold": 3,
-        "stone": 0
-      }
-    },
-    {
-      "type": "move",
-      "selection": "3 gold villager",
-      "target": "stone",
-      "setup": {
-        "food": 9,
-        "wood": 0,
-        "gold": 0,
-        "stone": 3
       }
     },
     {
       "type": "build",
-      "selection": "new build landmark",
-      "target": "landmark",
-      "setup": {
-        "food": 9,
-        "wood": 0,
-        "gold": 0,
-        "stone": 3
-      }
-    },
-    {
-      "type": "move",
-      "selection": "2 food villager",
-      "target": "landmark",
-      "setup": {
-        "food": 7,
-        "wood": 0,
-        "gold": 0,
-        "stone": 3
-      }
-    },
-    {
-      "type": "move",
-      "selection": "6 food villager, build with 1",
-      "target": "lumber",
+      "selection": "new to house (close to wood)",
+      "target": "house",
       "chain": [
         {
+          "type": "build",
+          "selection": "shift lumber",
+          "target": "lumber"
+        },
+        {
           "type": "move",
-          "selection": "all to wood",
+          "selection": "shift wood",
           "target": "wood"
         }
       ],
       "setup": {
-        "food": 1,
-        "wood": 6,
-        "gold": 0,
-        "stone": 3
+        "food": 8,
+        "wood": 1,
+        "gold": 5,
+        "stone": 0
       }
     },
     {
@@ -147,54 +97,222 @@
       "selection": "new wood",
       "target": "wood",
       "setup": {
-        "food": 1,
-        "wood": 7,
-        "gold": 0,
-        "stone": 3
+        "food": 8,
+        "wood": 2,
+        "gold": 5,
+        "stone": 0
       }
     },
     {
-      "type": "move",
-      "selection": "new wood",
-      "target": "wood",
+      "type": "build",
+      "selection": "3 from gold build RoyalCavalry",
+      "target": "landmark",
       "setup": {
-        "food": 1,
-        "wood": 8,
-        "gold": 0,
-        "stone": 3
-      }
+        "food": 8,
+        "wood": 2,
+        "gold": 5,
+        "stone": 0
+      },
+      "chain": [
+        {
+          "type": "move",
+          "selection": "shift back to gold",
+          "target": "gold"
+        }
+      ]
     },
     {
       "type": "move",
-      "selection": "new wood",
-      "target": "wood",
-      "setup": {
-        "food": 1,
-        "wood": 9,
-        "gold": 0,
-        "stone": 3
-      }
-    },
-    {
-      "type": "move",
-      "selection": "new stone",
-      "target": "stone",
-      "setup": {
-        "food": 1,
-        "wood": 9,
-        "gold": 0,
-        "stone": 4
-      }
-    },
-    {
-      "type": "move",
-      "selection": "new sheep (after all stone to TC, and all from landmark",
+      "selection": "until 11 new sheep",
       "target": "sheep",
       "setup": {
-        "food": 2,
-        "wood": 9,
-        "gold": 0,
-        "stone": 4
+        "food": 11,
+        "wood": 2,
+        "gold": 5,
+        "stone": 0
+      }
+    },
+    {
+      "type": "build",
+      "selection": "(can afford mill) 5 from food to deer",
+      "target": "deer",
+      "setup": {
+        "food": 11,
+        "wood": 2,
+        "gold": 5,
+        "stone": 0
+      }
+    },
+    {
+      "type": "move",
+      "selection": "continue to sheep until next mill",
+      "target": "sheep",
+      "setup": {
+        "food": 14,
+        "wood": 2,
+        "gold": 5,
+        "stone": 0
+      }
+    },
+    {
+      "type": "build",
+      "selection": "5 from food to berries",
+      "target": "berries",
+      "setup": {
+        "food": 14,
+        "wood": 2,
+        "gold": 5,
+        "stone": 0
+      }
+    },
+    {
+      "type": "move",
+      "selection": "up to 20 to sheep",
+      "target": "sheep",
+      "setup": {
+        "food": 20,
+        "wood": 2,
+        "gold": 5,
+        "stone": 0
+      }
+    },
+    {
+      "type": "move",
+      "selection": "switch to gold up to 9",
+      "target": "gold",
+      "setup": {
+        "food": 20,
+        "wood": 2,
+        "gold": 9,
+        "stone": 0
+      }
+    },
+    {
+      "type": "build",
+      "selection": "5 from food to next source",
+      "target": "berries",
+      "setup": {
+        "food": 20,
+        "wood": 2,
+        "gold": 8,
+        "stone": 0
+      }
+    },
+    {
+      "type": "tech",
+      "selection": "chivalry",
+      "target": "stable",
+      "setup": {
+        "food": 20,
+        "wood": 2,
+        "gold": 9,
+        "stone": 0
+      }
+    },
+    {
+      "type": "move",
+      "selection": "continue on gold to 14",
+      "target": "gold",
+      "setup": {
+        "food": 20,
+        "wood": 2,
+        "gold": 14,
+        "stone": 0
+      }
+    },
+    {
+      "type": "build",
+      "selection": "ageup reached all tc food to wood",
+      "target": "wood",
+      "setup": {
+        "food": 14,
+        "wood": 8,
+        "gold": 14,
+        "stone": 0
+      }
+    },
+    {
+      "type": "build",
+      "selection": "any 5 safe food (guildhall)",
+      "target": "landmark",
+      "setup": {
+        "food": 14,
+        "wood": 8,
+        "gold": 14,
+        "stone": 0
+      },
+      "chain": [
+        {
+          "type": "move",
+          "selection": "shift back to food",
+          "target": "berries"
+        }
+      ]
+    },
+    {
+      "type": "move",
+      "selection": "continue to gold until 19/20",
+      "target": "gold",
+      "setup": {
+        "food": 14,
+        "wood": 8,
+        "gold": 18,
+        "stone": 0
+      }
+    },
+    {
+      "type": "tech",
+      "selection": "woodaxe",
+      "target": "lumber",
+      "setup": {
+        "food": 14,
+        "wood": 2,
+        "gold": 18,
+        "stone": 0
+      }
+    },
+    {
+      "type": "tech",
+      "selection": "goldpick",
+      "target": "mine",
+      "setup": {
+        "food": 14,
+        "wood": 2,
+        "gold": 19,
+        "stone": 0
+      }
+    },
+    {
+      "type": "build",
+      "selection": "from gold build stable",
+      "target": "stable",
+      "setup": {
+        "food": 14,
+        "wood": 8,
+        "gold": 19,
+        "stone": 0
+      }
+    },
+    {
+      "type": "move",
+      "selection": "balance out economy",
+      "target": "wood",
+      "setup": {
+        "food": 14,
+        "wood": 8,
+        "gold": 19,
+        "stone": 0
+      }
+    },
+    {
+      "type": "build",
+      "selection": "foremost villager build siege",
+      "target": "siege",
+      "setup": {
+        "food": 14,
+        "wood": 8,
+        "gold": 19,
+        "stone": 0
       }
     }
   ]

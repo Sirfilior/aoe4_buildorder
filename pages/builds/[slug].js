@@ -11,7 +11,7 @@ function Build({ build }) {
             <div key={i} className="border-2 border-yellow px-4 py-2 mb-2 flex">
               <div className="flex flex-grow">
                 <div className="flex-grow">
-                  <div className="px-2 flex justify-between">
+                  <div className="flex justify-between">
                     <div className="flex gap-2 items-center">
                       <div>
                         <TypeIcon type={timeentry.type} />
@@ -48,10 +48,10 @@ function Build({ build }) {
                 )}
               </div>
               <div className="px-2 text-white border-l-2">
-                <span>{timeentry.setup.food} F</span>
-                <span>{timeentry.setup.wood} W</span>
-                <span>{timeentry.setup.gold} G</span>
-                <span>{timeentry.setup.stone} S</span>
+                <span>{timeentry.setup.food}F </span>
+                <span>{timeentry.setup.wood}W </span>
+                <span>{timeentry.setup.gold}G </span>
+                <span>{timeentry.setup.stone}S </span>
               </div>
             </div>
           ))}

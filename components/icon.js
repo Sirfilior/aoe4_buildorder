@@ -6,7 +6,7 @@ import {
   GiTwoCoins,
   GiGoldMine,
   GiHouse,
-  GiSheep,
+  GiGearHammer,
   GiStrawberry,
   GiDeer,
   GiWindmill,
@@ -14,6 +14,8 @@ import {
   GiStonePile,
   GiFamilyHouse,
   GiIndianPalace,
+  GiStable,
+  GiCatapult,
 } from "react-icons/gi";
 
 export default function TypeIcon({type}) {
@@ -46,7 +48,13 @@ export default function TypeIcon({type}) {
       return <GiFamilyHouse color="#ffdf91" size="1.5em" />;
     case "landmark":
       return <GiIndianPalace color="#ffdf91" size="1.5em" />;
+    case "tech":
+      return <GiGearHammer color="#ffdf91" size="1.5em" />;
+    case "stable":
+      return <GiStable color="#ffdf91" size="1.5em" />;
+    case "siege":
+      return <GiCatapult color="#ffdf91" size="1.5em" />;
     default:
-      break;
+      return <div>{type}</div>;
   }
 }
